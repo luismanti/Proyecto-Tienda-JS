@@ -147,6 +147,7 @@ nav{
     left: 0;
     top: 61px;
     background-color: var(--white);
+    box-sizing: border-box;
 }
 
 .mobile-menu ul{
