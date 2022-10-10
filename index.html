@@ -96,7 +96,8 @@
             </ul>
         </div>
     </nav>
-    <aside class="product-detail inactive">
+
+    <aside id="shoppingCartContainer" class="inactive">
         <div class="title-container">
             <img src="./assets/icons/flechita.svg" alt="Arrow" >
             <p class="title">Shopping cart</p>
@@ -144,6 +145,24 @@
             </button>
         </div> 
     </aside>
+
+    <aside id="productDetail" class="inactive">
+        <div class="product-detail-close">
+            <img src="./assets/icons/icon_close.png" alt="close icon" srcset="">
+        </div>
+        <img src="https://images.pexels.com/photos/580612/pexels-photo-580612.jpeg" class="product-img" alt="product-img">
+
+        <div class="product-info">
+            <p>$120.00</p>
+            <p>Burguer</p>
+            <p>Deliciosa Hamburguesa sabor a pollo con tocineta, viene con papas a la francesa y gaseosa</p>
+            <button class="primary-button add-to-cart-buton">
+                <img src="./assets/icons/bt_add_to_cart.svg" alt="add to cart icon" srcset="">
+                Add to cart
+            </button>
+        </div>
+    </aside>
+
     <section class="main-container">
         <div class="cards-container">
             <!-- <div class="product-card">
@@ -152,14 +171,16 @@
                     <div>
                         <p>$120.00</p>
                         <p>Burguer</p>
-                     </div>
-                     <figure>
+                    </div>
+                    <figure>
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="" srcset="">
-                     </figure>
+                    </figure>
                 </div> 
             </div>                                                  -->
         </div>
     </section>
+
     <script src="./codigo.js"></script>
+
 </body>
 </html>

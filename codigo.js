@@ -5,27 +5,27 @@ const cardsContainer = document.querySelector('.cards-container');
 
 const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
-const aside = document.querySelector('.product-detail');
+const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
 
 navEmail.addEventListener('click', toogleDesktopMenu);
 iconMobileMenu.addEventListener('click', toogleMobileMenu);
 shoppingCart.addEventListener('click', toogleAsideCart);
 
 function toogleDesktopMenu(){
-    const isAsideCLosed = aside.classList.contains('inactive');
+    const isAsideCLosed = shoppingCartContainer.classList.contains('inactive');
     
     if (!isAsideCLosed) {
-        aside.classList.add('inactive')
+        shoppingCartContainer.classList.add('inactive')
     }
     
     desktopMenu.classList.toggle('inactive');
 }
 
 function toogleMobileMenu(){
-    const isAsideCLosed = aside.classList.contains('inactive');
+    const isAsideCLosed = shoppingCartContainer.classList.contains('inactive');
     
     if (!isAsideCLosed) {
-        aside.classList.add('inactive')
+        shoppingCartContainer.classList.add('inactive')
     }
     
     mobileMenu.classList.toggle('inactive');
@@ -44,7 +44,7 @@ function  toogleAsideCart(){
         desktopMenu.classList.add('inactive')
     }
     
-    aside.classList.toggle('inactive');
+    shoppingCartContainer.classList.toggle('inactive');
 }
 
 function renderList (arr){
